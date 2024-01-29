@@ -1,79 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-body {
-    background-color: black;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway';
     color: white;
-    font-family: 'Raleway', sans-serif;
 }
-header {
-    font-size: 40px;
-    text-align: center;
+
+html {
+    scrollbar-width: none;
+    /* Para Firefox */
+    -ms-overflow-style: none;
+    /* Para Internet Explorer 10+ y Edge */
 }
-header img {
-width:max-content;
+
+html::-webkit-scrollbar {
+    display: none;
 }
-.info {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    padding: 1em;
-}
-.info div {
+
+body {
     display: flex;
     flex-direction: column;
-    width: 475px;
-    max-height: 197px;
+    gap: 25px;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: black;
 }
-.info div p {
-    width: 475px;
-    max-height: 197px;
+
+header img {
+    width: 100%;
+
+}
+
+main {
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+main .parrafos p {
+    text-align: justify;
     font-size: 16px;
+
 }
-section img {
+
+.parrafos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 475px;
+    height: 197px;
+}
+
+main img {
+    width: 399px;
     height: 237px;
 }
-.caracteristicas-box {
-    background-color:#1E1A13;
-    align-items: center;
-}
-.carac-tittle{
-    text-align: center;
-    padding-top:1em;
-    padding-bottom: 2em;
-    font-size: 40px;
-}
-.icons {
+
+section {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-}
-.carac i {
-    display: flex;
     align-items: center;
     flex-direction: column;
+    height: 200px;
+    background: #1E1A13 0% 0% no-repeat padding-box;
+    text-align: center;
+}
+
+section .icons div {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    height: 50px;
+    width: 200px;
 }
-.carac h1 {
-    font-size: 24px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-}
-.carac-content {
+
+section .icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 23px;
-    padding-top: 1em;
+    justify-content:space-evenly ;
+    align-items: center;
+    width: 100%;
 }
-.images{
-    padding-top:4em ;
+
+.galeria {
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 4em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: black;
+    flex-wrap: wrap;
 }
+
+.galeria img {
+    width: 316px;
+    height: 202px;
+}
+
 footer {
-    background-color: #1E1A13;
-    height: 60px;
+    background: #1E1A13 0% 0% no-repeat padding-box;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 80px;
+    text-align: center;
 }
